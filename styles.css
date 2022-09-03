@@ -1,0 +1,296 @@
+:root {
+    --Pink--: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan--: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan--: hsl(192, 100%, 9%);
+    --Grayish-Blue--: hsl(208, 11%, 55%);
+    --Font-size: 1.125rem
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    font-size: var(--Font-size);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: var(--Grayish-Blue--);
+    margin: 0;
+}
+
+.headings {
+    font-family: 'Poppins', sans-serif;
+    color: var(--Very-Dark-Cyan--);
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    max-width: 80%;
+}
+
+.hero-section {
+    padding: 1em 0 3em;
+    background-color: var(--Very-Pale-Cyan--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    width: 90%;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.text-div {
+    padding: 1em 0;
+    max-width: 80%;
+}
+
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: hsl(193 25% 95%);
+    padding: 0.5em 2em;
+    box-shadow: 0px 1px 1px 1px hsl(208 8% 87%);
+}
+
+.btn-pink {
+    background-color: var(--Pink--);
+    color: var(--Very-Pale-Cyan--);
+    padding: 1.4em 2.5em;
+    margin-top: 2em;
+}
+
+.mockups {
+    padding: 3em 0;
+    max-width: 100%;
+}
+
+.GFY {
+    box-shadow: 0px 1px 4px 2px hsl(208 18% 97%);
+    padding: 1em 0.5em;
+    border-radius: 0.75rem;
+    margin-top: 4em;
+}
+
+.illustrations {
+    padding-bottom: 3em;
+}
+
+.last-cta {
+    background-color: white;
+    position: relative;
+    top: 10vh;
+    box-shadow: 1px 0px 4px 0px hsl(208 4% 77%);
+}
+
+.main-footer {
+    background-color: var(--Very-Dark-Cyan--);
+    color: white;
+    padding: 10em 1.5em 5em 1.5em;
+    text-align: left;
+}
+
+.contact-details {
+    padding: 0 0 2em 0;
+}
+
+.contact-flex {
+    display: flex;
+    align-items: baseline;
+    padding-top: 1em;
+}
+.email p {
+    margin: 0;
+}
+
+.footer-logo {
+    padding-right: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav1,
+.nav2 {
+    margin-top: 1.5em;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-link+.nav-link {
+    margin-top: 1.5em;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0 2em 0;
+}
+
+.fa-brands {
+    padding: 1em;
+    border: solid 2px;
+    border-radius: 100px;
+}
+
+.fa-brands+.fa-brands {
+    margin-left: 1.5em;
+}
+
+.fa-brands:hover {
+    color: var(--Pink--);
+    cursor: pointer;
+}
+
+small {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    body {
+        text-align: left;
+    }
+
+    .text-div {
+        display: flex;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .h1-para-button {
+        padding: 0 2em 2em 0;
+    }
+
+    .para {
+        margin-left: 0;
+    }
+
+    .mockups {
+        max-width: 50%;
+    }
+
+    main .row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .img {
+        max-width: 50%;
+    }
+
+    .illustrations {
+        padding: 0 3em 3em 0;
+    }
+
+    .last-cta {
+        text-align: center;
+    }
+
+    .main-footer .row {
+        flex-direction: column;
+    }
+
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .img-contact-details {
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navs {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0 1.5em;
+        padding-top: 2.3em;
+    }
+
+    .icon-row {
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    .fa-brands {
+        padding: 0.5em;
+    }
+
+    small {
+        text-align: center;
+    }
+
+
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    background-color: var(--Very-Dark-Cyan--);
+    margin: 0;
+    padding-bottom: 60vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: hsl(228 11% 87%);
+}
